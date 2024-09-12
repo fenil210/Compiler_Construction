@@ -1,0 +1,26 @@
+Question:
+S -> ACB | CbB | Ba 
+A -> da | BC
+B -> g | ε
+C -> h | ε 
+
+Answer:
+FIRST and FOLLOW sets:
+   Non Terminals           First               Follow
+         S           {d, ε, h, b, a, g}         {$}
+         A              {h, d, g, ε}         {$, h, g}
+         B                 {g, ε}           {$, h, a, g}
+         C                 {h, ε}           {$, h, b, g}
+
+Question:
+E -> E+T | T
+T -> T*F | F
+F -> (E) | i 
+
+FIRST and FOLLOW sets:
+   Non Terminals           First               Follow
+         E               {'i', '('}          {'$', ')'}
+         T               {'i', '('}          {'+', '$'}
+         F               {'i', '('}       {'*', '$', '+'}
+         E'              {'+', 'ε'}            {'$'}
+         T'              {'*', 'ε'}          {'+', '$'}
