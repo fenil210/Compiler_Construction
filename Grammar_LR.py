@@ -79,7 +79,6 @@ class Grammar_LR:
                 self.non_terminals.append(new_non_terminal)
     
     def __str__(self):
-        print("self.rules.items()",self.rules.items())
         return "\n".join(f"{nt} -> {' | '.join(prods)}" for nt, prods in self.rules.items())
 
     def get_symbol_mapping(self):
