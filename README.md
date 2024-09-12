@@ -17,8 +17,12 @@ This repository contains a tool for analyzing context-free grammars, specificall
 
 ## Usage
 
-1. Input your grammar in `input.txt`
-2. Run `Grammar_FF.py` to process the grammar and generate FIRST and FOLLOW sets
+- Sample input provided in `input.txt`
+ ![INPUT](https://github.com/user-attachments/assets/70c1199b-3f12-4eca-843b-d4073d3454b1)
+- Run `FIRST_FOLLOW.py`
+- ![FF LR](https://github.com/user-attachments/assets/345d0247-ccc6-4360-b4e9-3d0bc48fa770)
+
+
 
 ## Features
 
